@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <style media="screen">
+  div.img-container{
+    top:496px;
+    left:146px;
+
+  }
+    .upper{
+      position:absolute;
+      width: 950px;
+      height: 496px;
+      left: 0px;
+      top: 0px;
+      background: #F7F7FC;
+    }
+    .lower{
+      position:absolute;
+      width: 950px;
+      height: 344px;
+      left: 0px;
+      top: 496px;
+      background: #F2D8FF;
+    }
+    .st{
+
+        position: absolute;
+        width: 408px;
+      height: 148px;
+      left: 1100px;
+      top: 100px;
+    }
+.sbf{
+  position: absolute;
+  width: 357.05px;
+  height: 48px;
+  left: 10px;
+  top: 730px;
+
+}
+  </style>
+  </head>
+  <body>
+
+
+   <div class="img-container"> <img src="C:\Users\priyadharshinip\Desktop\full_stack\images\image.png">
+     <div class="st"><img src="C:\Users\priyadharshinip\Desktop\full_stack\images\Group 283.png">
+   <div class="sbf"><img src="C:\Users\priyadharshinip\Desktop\full_stack\images\Group 280.png"></div>
+   <p id="demo"><script type="text/javascript">
+   alert("Hello");
+     var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {   alert("ahi");
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == name)
+        {
+            alert(sParameterName[1]);
+        }
+    }
+     var url = window.location.href;
+    const urlvalues= new URLSearchParams(url);
+    var name= urlvalues.get('name');
+    alert(name);
+     <script type="text/javascript">
+
+          var form=document.getElementById("requestform");
+          form.onclick= function(e){
+          var name=document.getElementById("name").value;
+          document.getElementById("demo").innerHTML=name;
+       }
+
+     </script>
+</div>
+  </body>
+</html>
