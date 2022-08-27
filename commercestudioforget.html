@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <style media="screen">
+  div.img-container{
+    top:496px;
+    left:146px;
+
+  }
+    .upper{
+      position:absolute;
+      width: 950px;
+      height: 496px;
+      left: 0px;
+      top: 0px;
+      background: #F7F7FC;
+    }
+    .lower{
+      position:absolute;
+      width: 950px;
+      height: 344px;
+      left: 0px;
+      top: 496px;
+      background: #F2D8FF;
+    }
+    .st{
+
+        position: absolute;
+        width: 408px;
+      height: 148px;
+      left: 1100px;
+      top: 50px;
+    }
+.sbf{
+  position: absolute;
+  width: 357.05px;
+  height: 48px;
+  left: 10px;
+  top: 650px;
+
+}
+.stf{
+
+  position: absolute;
+  width: 396px;
+  height: 324px;
+  left: 1010px;
+  top: 250px;
+
+  font-family: 'Metropolis';
+  font-style: Semi-Bold;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.pa{
+
+position: absolute;
+width: 351px;
+height: 96px;
+left: 1120px;
+top: 300px;
+
+font-family: 'Metropolis';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* or 150% */
+display: inline;
+
+color: #1C2C42;
+
+}
+.links{
+  position: absolute;
+width: 490px;
+height: 840px;
+left: 1110px;
+top: 550px;
+font-size: 18px;
+}
+a:link{
+  text-decoration: none;
+}
+  </style>
+  </head>
+  <body>
+
+   <div class="img-container"> <img src="C:\Users\priyadharshinip\Desktop\full_stack\images\image.png">
+     <div class="st"><img src="C:\Users\priyadharshinip\Desktop\full_stack\images\Group 283.png">
+   <div class="sbf"><img src="C:\Users\priyadharshinip\Desktop\full_stack\images\Group 280.png"></div></div></div>
+   <div class="stf">  <img src="C:\Users\priyadharshinip\Desktop\full_stack\images\Group 420.png"> <strong>Forget Password</strong>
+    </div>
+ <div class="pa"><p id="namemsg"></p>
+ <br><br>
+ Reset magic link is valid for <strong> next 30 minutes</strong> </div>
+ <div class="links">
+ Go back to <a href="">Login</a>
+
+ </div>
+<script type="text/javascript">
+
+  var idx=document.URL.indexOf('?');
+  var values=new Array();
+  if(idx!=-1){
+
+    var pairs=document.URL.substring(idx+1, document.URL.length).split('&');
+          for(var i=0;i<pairs.length;i++){
+      nameVal= pairs[i].split('=');
+      values[nameVal[0]]=nameVal[1];
+    }
+
+    }
+   name=unescape(values["email"]);
+   document.getElementById("namemsg").innerHTML="Email has been sent to your inbox ("+ name +") with magic link to reset your credential.";
+
+</script>
+  </body>
+</html>
